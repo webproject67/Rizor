@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-display: swap;
+	src:
+		url("/fonts/Roboto-Bold.woff2") format("woff2"),
+		url("/fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 300;
+	font-display: swap;
+	src:
+		url("/fonts/Roboto-Light.woff2") format("woff2"),
+		url("/fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "RubikMonoOne";
+	font-weight: 400;
+	font-display: swap;
+	src:
+		url("/fonts/RubikMonoOne-Regular.woff2") format("woff2"),
+		url("/fonts/RubikMonoOne-Regular.woff") format("woff");
+}
+
+body {
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+	font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+	color:  #000000;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+label, 
+button, 
+input, 
+select { 
+    cursor: pointer; 
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2, 
+h3 {
+	font-weight: inherit;
+}
