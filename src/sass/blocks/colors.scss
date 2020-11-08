@@ -1,0 +1,166 @@
+.colors {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.colors__title {
+  font-family: RubikMonoOne;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.colors__text {
+  padding: 0 58px 0 40px;
+  text-align: start; 
+  line-height: 24px;
+}
+
+.colors__list {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  margin: 35px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.colors__item {
+  position: relative;
+
+  &:last-child::before {
+    position: absolute;
+    content: "";
+    top: 27px;
+    right: 9px;
+    width: 2px;
+    height: 48px;
+    background-color: #cdcdcd;
+  }
+}
+
+.colors__btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+}
+
+.colors__btn--yellow {
+  background-color: #e2e837;
+}
+
+.colors__btn--blue {
+  background-color: #00b6f1;
+}
+
+.colors__btn--red {
+  background-color: #e23232;
+}
+
+.colors__btn--silver {
+  background-color: #f0efef;
+}
+
+.colors__btn--black {
+  background-color: #0c0c0c;
+}
+
+@media (min-width: $tablet-width) {
+  .colors {
+    display: flex;
+    text-align: start;
+    padding: 91px 50px 91px 111px;
+  }
+
+  .colors__desc {
+    padding: 66px 8px 66px 0px;
+  }
+
+  .colors__text {
+    padding: 0;
+  }
+
+  .colors__list {
+    flex-direction: column;
+    order: 1;
+    width: auto;
+    margin: 0;
+    padding: 35px 0 35px 35px;
+  }
+
+  .colors__item:last-child::before {
+    top: 10px;
+    right: 29px;
+    width: 48px;
+    height: 2px;
+    background-color: #cdcdcd;
+  }
+
+  .colors__img {
+    min-width: 344px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .colors {
+    position: absolute;
+    top: 625px;
+    right: 15px;
+    width: 374px;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .colors__desc {
+    padding: 0 0 0 103px;
+  }
+
+  .colors__title {
+    position: relative;
+    font-size: 40px;
+    line-height: 12px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: -50px;
+      width: 17px;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: -50px;
+      width: 1px;
+      height: 288px;
+      background-color: #cdcdcd;
+    }
+  }
+  
+  .colors__text {
+    width: 250px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .colors__list {
+    flex-direction: unset;
+    order: 0;
+    width: 230px;
+    margin: 38px 124px 28px;
+    padding: 0;
+  }
+
+  .colors__item:last-child::before {
+    top: 27px;
+    right: 9px;
+    width: 2px;
+    height: 48px;
+    background-color: #cdcdcd;
+  }
+}

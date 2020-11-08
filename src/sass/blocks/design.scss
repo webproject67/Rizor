@@ -1,0 +1,148 @@
+.design__desc {
+  color: #3a2ff8;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.design__title {
+  font-family: RubikMonoOne;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.design__text {
+  margin-bottom: 23px;
+  padding-left: 39px;
+  line-height: 30px;
+}
+
+.design__list {
+  margin: 0;
+  padding-left: 79px;
+  list-style: none;
+}
+
+.design__item {
+  position: relative;
+  line-height: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -38px;
+    width: 30px;
+    height: 5px;
+    background-color: #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .design {
+    padding: 56px 0 85px 446px;
+    position: relative;
+    background: url("/img/design-tablet@1x.jpg") no-repeat left top;
+    
+    &::before {
+      position: absolute;
+      content: "";
+      top: 250px;
+      left: 114px;
+      width: 100px;
+      height: 100px;
+      background: url("/img/play-tablet@1x.png") no-repeat;
+    }
+  }
+
+  .design__desc {
+    text-align: start;
+  }
+
+  .design__title {
+    margin: 40px 0 27px;
+    text-align: start;
+  }
+
+  .design__text {
+    padding-left: 0;
+  }
+
+  .design__list {
+    padding-left: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .design {
+    padding: 49px 0 85px 484px;
+    background: none;
+
+    &::before {
+      top: 326px;
+      left: -37px;
+    }
+
+		&::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+			top: 0;
+			left: -360px;
+			width: 745px;
+			height: 750px;
+			background: url("/img/design-desktop@1x.jpg") no-repeat;
+    }
+  }
+
+  .design__desc {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .design__title {
+    margin: 62px 0 29px;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .design__text {
+    font-size: 18px;
+    
+  }
+
+  .design__list {
+    position: relative;
+    padding-left: 43px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -366px;
+      right: -269px;
+			width: 18px;
+			height: 780px;
+			background: url("/img/nav2@1x.png") no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -451px;
+      right: -170px;
+			width: 292px;
+      height: 769px;
+			background: url("/img/design-logo-desktop@1x.png") no-repeat;
+    }
+  }
+
+  .design__item {
+    font-size: 18px;
+    line-height: 31px;
+  }
+}
