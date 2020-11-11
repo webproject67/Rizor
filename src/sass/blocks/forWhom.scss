@@ -1,0 +1,188 @@
+.forWhom {
+  position: relative;
+  padding: 268px 0 38px;
+  background-color: #372df8;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -66px;
+    left: 0;
+    width: 299px;
+    height: 300px;
+    background: url("/img/forWhom-mobile@1x.png") no-repeat;
+  }
+}
+
+.forWhom__logo {
+  position: absolute;
+  top: 51px;
+  left: 29px;
+  font-family: RubikMonoOne;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 61px;
+  font-weight: 400;
+  text-align: end;
+
+  &--letter-spacing {
+    letter-spacing: -12px
+  }
+}
+
+.forWhom__title {
+  margin-bottom: 24px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.forWhom__desc {
+  padding: 0 12px;
+}
+
+.forWhom__text {
+  color: #ffffff;
+  line-height: 24px;
+
+  &--font-weight {
+    font-weight: 700;
+  }
+
+  &:last-child {
+    padding-right: 15px;
+  }
+}
+
+.forWhom__btn {
+  display: block;
+  margin: 41px auto;
+  padding: 8px 54px;
+  color: #3a2ff8;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 1, 0.2);
+  border-radius: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .forWhom {
+    padding: 440px 82px 68px;
+  
+    &::before {
+      left: 10px;
+      width: 724px;
+      height: 461px;
+      background: url("/img/forWhom-tablet@1x.png") no-repeat;
+    }
+  }
+
+  .forWhom__logo {
+    top: 18px;
+    left: 45px;
+    font-size: 125px;
+    letter-spacing: 32px;
+  
+    &--letter-spacing {
+      letter-spacing: 0
+    }
+  }
+
+  .forWhom__title {
+    margin-bottom: 16px;
+    padding-left: 13px;
+    text-align: start;
+  }
+
+  .forWhom__desc {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .forWhom__text {
+    &:first-child {
+      max-width: 298px;
+    }
+    
+    &:last-child {
+      max-width: 245px;
+      padding: 0;
+    }
+  }
+
+  .forWhom__btn {
+    margin: 31px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .forWhom {
+    padding: 77px 0 68px;
+    background-color: transparent;
+  
+    &::before {
+      left: 373px;
+      width: 1188px;
+      height: 774px;
+      background: url("/img/forWhom-desktop@1x.png") no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: -359px;
+      width: 1920px;
+      height: 790px;
+      background-color: #372df8;
+    }
+  }
+
+  .forWhom__logo {
+    top: 195px;
+    left: 371px;
+    font-size: 163px;
+    letter-spacing: 32px;
+  
+    &--letter-spacing {
+      letter-spacing: -5px;
+    }
+  }
+
+  .forWhom__title {
+    margin-bottom: 59px;
+    font-size: 20px;
+  }
+
+  .forWhom__desc {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .forWhom__text {
+    font-size: 18px;
+    line-height: 29px;
+
+    &:first-child {
+      max-width: 336px;
+      margin-bottom: 4px;
+    }
+    
+    &:last-child {
+      max-width: 323px;
+    }
+  }
+
+  .forWhom__btn {
+    margin: 77px 13px;
+    padding: 8px 46px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,229 @@
+.characteristics {
+  padding: 35px 0 64px;
+  text-align: center;
+}
+
+.characteristics__title {
+  color: #3a2ff8;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.characteristics__desc {
+  width: 265px;
+  margin: 26px auto;
+  font-family: RubikMonoOne;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 2px;
+  
+  &--letter-spacing {
+    letter-spacing: -4px;
+  }
+}
+
+.characteristics__list {
+  margin: 0;
+  padding: 24px 0;
+  list-style: none;
+}
+
+.characteristics__item {
+  margin: 0 auto;
+
+  &--housing {
+    width: 304px;
+    padding: 52px 0 44px;
+    background: url("/img/Housing-mobile@1x.png") no-repeat center top;
+  }
+
+  &--wheels {
+    width: 220px;
+    padding: 50px 0 38px;
+    background: url("/img/Wheels-mobile@1x.png") no-repeat center top;
+  }
+
+  &--power {
+    width: 268px;
+    padding: 41px 0 37px;
+    background: url("/img/Power-mobile@1x.png") no-repeat center top;
+  }
+
+  &--weight {
+    width: 222px;
+    padding: 55px 0 32px;
+    background: url("/img/Weight-mobile@1x.png") no-repeat center top;
+  }
+}
+
+.characteristics__type {
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.characteristics__text {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.characteristics__type--font-size {
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .characteristics {
+    padding: 46px 0 145px;
+    text-align: start;
+  }
+
+  .characteristics__inner {
+    padding: 55px 0 55px 468px;
+    background: url("/img/characteristics-tablet@1x.jpg") no-repeat left top;
+  }
+
+  .characteristics__desc {
+    margin: 36px 0;
+  }
+
+  .characteristics__list {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 4px 93px;
+  }
+
+  .characteristics__item--housing,
+  .characteristics__item--power,
+  .characteristics__item--wheels,
+  .characteristics__item--weight {
+    margin: 0;
+    padding: 52px 0 39px;
+    background-position: left top;
+  }
+  
+  .characteristics__item--housing,
+  .characteristics__item--power {
+    width: 320px;
+    margin-right: auto;
+  }
+  
+  .characteristics__item--power,
+  .characteristics__item--weight {
+    padding: 42px 0;
+  }
+  
+  .characteristics__item--wheels,
+  .characteristics__item--weight {
+    width: 213px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .characteristics {
+    position: relative;
+    margin: 147px 0 133px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: -360px;
+      width: 789px;
+      height: 844px;
+      background: url("/img/characteristics-desktop@1x.jpg") no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -14px;
+      right: -269px;
+      width: 18px;
+      height: 780px;
+      background: url("/img/nav3@1x.png") no-repeat;
+    }
+  }
+
+  .characteristics__inner {
+    padding: 7px 0 55px 14px; 
+    background: none;
+
+  }
+
+  .characteristics__title {
+    font-size: 20px;
+    letter-spacing: 1.6px;
+  }
+  
+  .characteristics__desc {
+    width: auto;
+    margin: 57px 0 0;
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+
+  .characteristics__list {
+    position: relative;
+    padding: 10px 0 0 476px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -445px;
+      right: -168px;
+      width: 292px;
+      height: 769px;
+      background: url("/img/design-logo-desktop@1x.png") no-repeat;
+    }
+  }
+
+  .characteristics__item {
+    &--housing {
+      padding: 12px 0 39px 59px;
+      background: url("/img/housing-desktop@1x.png") no-repeat;
+    }
+  
+    &--wheels {
+      padding: 12px 0 0 48px;
+      background: url("/img/wheels-desktop@1x.png") no-repeat;
+    }
+  
+    &--power {
+      padding: 0 0 0 59px;
+      background: url("/img/power-desktop@1x.png") no-repeat;
+    }
+  
+    &--weight {
+      padding: 0 0 0 46px;
+      background: url("/img/weight-desktop@1x.png") no-repeat;
+    }
+  }
+
+  .characteristics__item--housing,
+  .characteristics__item--power {
+    width: 355px;
+    margin-right: 6px;
+  }
+  
+  .characteristics__item--wheels,
+  .characteristics__item--weight {
+    width: 289px;
+  }
+
+  .characteristics__type {
+    font-size: 20px;
+  }
+  
+  .characteristics__text {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+}

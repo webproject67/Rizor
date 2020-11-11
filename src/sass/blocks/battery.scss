@@ -1,0 +1,139 @@
+.battery {
+  padding: 51px 10px 222px;
+  background: url("/img/battery-mobile@1x.jpg") no-repeat 10px bottom;
+}
+
+.battery__title {
+  margin-bottom: 30px;
+  font-family: RubikMonoOne;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.battery__text {
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.battery__list {
+  display: flex;
+  margin: 0;
+  padding: 0 0 0 24px;
+  list-style: none;
+}
+
+.battery__item:first-child {
+  margin-right: 48px;
+}
+
+.battery__number {
+  margin: 35px 0 0;
+  font-family: RubikMonoOne;
+  color: #3a2ff8;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.battery__number--font-size {
+  font-size: 18px;
+}
+
+.battery__text2 {
+  margin-top: 0;
+  color: #666666;
+  font-size: 14px;  
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .battery {
+    position: relative;
+    margin: 99px 21px 0;
+    padding: 26px 0 70px 352px;
+    background: url("/img/battery-tablet@1x.jpg") no-repeat left top;
+  }
+
+  .battery__title {
+    text-align: start;
+  }
+
+  .battery__list {
+    position: absolute;
+    bottom: 0;
+    left: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .battery {
+    margin: 230px 16px 0;
+    padding: 346px 0 70px;
+    background: url("/img/battery-desktop@1x.jpg") no-repeat left top;
+  }
+
+  .battery__title {
+    position: relative;
+    margin-bottom: 22px;
+    letter-spacing: 3px;
+    font-size: 40px;
+
+    &::before {
+			position: absolute;
+			content: "";
+      bottom: 26px;
+      left: 419px;
+			width: 35px;
+      height: 1px;    
+      background-color: #cdcdcd;
+    }
+    
+    &::after {
+			position: absolute;
+			content: "";
+      bottom: 26px;
+      left: 453px;
+			width: 1px;
+      height: 255px;
+      background-color: #cdcdcd;
+		}
+  }
+
+  .battery__text {
+    position: relative;
+    width: 533px;
+    line-height: 30px;
+    font-size: 18px;
+
+    &::before {
+			position: absolute;
+			content: "";
+      top: -303px;
+      right: 79px;
+			width: 86px;
+      height: 1px;   
+      background-color: #cdcdcd;
+    }
+  }
+
+  .battery__list {
+    bottom: 363px;
+    left: 75px;
+  }
+
+  .battery__number {
+    font-size: 60px;
+  }
+  
+  .battery__number--font-size {
+    font-size: 24px;
+  }
+  
+  .battery__text2 {
+    font-size: 16px;  
+  }
+}

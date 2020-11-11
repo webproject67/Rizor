@@ -1,0 +1,195 @@
+.modes {
+  padding: 51px 0 343px;
+  background: url("/img/modes-mobile@1x.jpg") no-repeat center bottom;
+}
+
+.modes__title {
+  font-family: RubikMonoOne;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.modes__text {
+  padding: 0 42px;
+  line-height: 25px;
+}
+
+.modes__text--font-weight {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.modes__list,
+.modes__list2 {
+  margin: 0;
+  padding: 0 0 0 34px;
+  list-style: none;
+}
+
+.modes__list {
+  padding: 10px 0 0 80px;    
+}
+
+.modes__item {
+  position: relative;
+  line-height: 24px;
+  margin-bottom: 19px;   
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: -38px;
+    width: 20px;
+    height: 5px;
+    background-color: #000000;
+  }
+}
+
+.modes__list2 {
+  display: flex;    
+}
+
+.modes__number {
+  margin: 15px 0 5px;
+  font-family: RubikMonoOne;
+  color: #3a2ff8;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.modes__number--fint-size {
+  font-size: 18px;
+}
+
+.modes__text2 {
+  margin: 0;
+  padding-left: 7px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.modes__item2:first-child {
+  margin-right: 38px;   
+}
+
+@media (min-width: $tablet-width) {
+.modes {
+    position: relative;
+    margin-top: 98px;
+    padding: 83px 0 130px 90px;
+    background: url("/img/modes-tablet@1x.jpg") no-repeat right top;
+
+    &::before {
+			position: absolute;
+			content: "";
+      bottom: 20px;
+      right: 360px;
+			width: 83px;
+      height: 68px;
+			background: url("/img/play-indicators-tablet@1x.png") no-repeat;
+		}
+  }
+
+  .modes__title {
+    text-align: start;
+  }
+
+  .modes__text {
+    width: 287px;
+    padding-left: 3px;
+  }
+
+  .modes__list {
+    padding: 10px 0 0 42px;
+    width: 327px;
+  }
+  
+  .modes__list2 {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modes {
+    margin-top: 150px;
+    padding: 46px 0 130px 11px;
+    background: none;
+
+    &::before {
+			bottom: -6px;
+      left: 284px;
+			width: 250px;
+      height: 570px;
+			background: url("/img/play-modes-desktop@1x.png") no-repeat;
+		}
+    
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      right: -360px;
+      width: 1075px;
+      height: 750px;
+      background: url("/img/modes-desktop@1x.jpg") no-repeat;
+    }
+  }
+
+  .modes__title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .modes__text {
+    width: 471px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .modes__list {
+    width: auto;
+    padding: 7px 0 0 45px;
+  }
+
+  .modes__item {
+    margin-bottom: 27px;
+    font-size: 18px;
+
+    &::before {
+      top: 9px;
+      left: -41px;
+      width: 30px;
+      height: 5px;
+      background-color: #000000;
+    }
+  }
+  
+  .modes__list2 {
+    padding: 31px 0;
+  }
+
+  .modes__number {
+    margin-bottom: 7px;
+    font-size: 60px;
+    letter-spacing: -3px;
+  }
+  
+  .modes__number--fint-size {
+    font-size: 26px;
+  }
+
+  .modes__text2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .modes__item2:first-child {
+    margin-right: 68px;   
+  }
+}
