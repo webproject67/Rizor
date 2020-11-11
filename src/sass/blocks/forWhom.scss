@@ -11,6 +11,11 @@
     width: 299px;
     height: 300px;
     background: url("/img/forWhom-mobile@1x.png") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/forWhom-mobile@2x.png");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -80,6 +85,11 @@
       width: 724px;
       height: 461px;
       background: url("/img/forWhom-tablet@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/forWhom-tablet@2x.png");
+        background-size: 748px auto;
+      }
     }
   }
 
@@ -131,6 +141,11 @@
       width: 1188px;
       height: 774px;
       background: url("/img/forWhom-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/forWhom-desktop@2x.png");
+        background-size: 1188px auto;
+      }
     }
 
     &::after {

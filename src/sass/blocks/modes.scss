@@ -1,6 +1,11 @@
 .modes {
   padding: 51px 0 343px;
   background: url("/img/modes-mobile@1x.jpg") no-repeat center bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/modes-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .modes__title {
@@ -84,6 +89,11 @@
     padding: 83px 0 130px 90px;
     background: url("/img/modes-tablet@1x.jpg") no-repeat right top;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/modes-tablet@2x.jpg");
+      background-size: 395px auto;
+    }
+
     &::before {
 			position: absolute;
 			content: "";
@@ -91,7 +101,12 @@
       right: 360px;
 			width: 83px;
       height: 68px;
-			background: url("/img/play-indicators-tablet@1x.png") no-repeat;
+      background: url("/img/play-indicators-tablet@1x.png") no-repeat;
+      
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/play-indicators-tablet@2x.png");
+        background-size: 83px auto;
+      }
 		}
   }
 
@@ -125,7 +140,12 @@
       left: 284px;
 			width: 250px;
       height: 570px;
-			background: url("/img/play-modes-desktop@1x.png") no-repeat;
+      background: url("/img/play-modes-desktop@1x.png") no-repeat;
+      
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/play-modes-desktop@2x.png");
+        background-size: 250px auto;
+      }
 		}
     
     &::after {
@@ -137,6 +157,11 @@
       width: 1075px;
       height: 750px;
       background: url("/img/modes-desktop@1x.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/modes-desktop@2x.jpg");
+        background-size: 1075px auto;
+      }
     }
   }
 

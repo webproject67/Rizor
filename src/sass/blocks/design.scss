@@ -48,6 +48,11 @@
     padding: 56px 0 85px 446px;
     position: relative;
     background: url("/img/design-tablet@1x.jpg") no-repeat left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/design-tablet@2x.jpg");
+      background-size: 374px auto;
+    }
     
     &::before {
       position: absolute;
@@ -57,6 +62,11 @@
       width: 100px;
       height: 100px;
       background: url("/img/play-tablet@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/play-tablet@2x.png");
+        background-size: 100px auto;
+      }
     }
   }
 
@@ -96,7 +106,12 @@
 			left: -360px;
 			width: 745px;
 			height: 750px;
-			background: url("/img/design-desktop@1x.jpg") no-repeat;
+      background: url("/img/design-desktop@1x.jpg") no-repeat;
+      
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/design-desktop@2x.jpg");
+        background-size: 745px auto;
+      }
     }
   }
 
@@ -127,7 +142,12 @@
       right: -269px;
 			width: 18px;
 			height: 780px;
-			background: url("/img/nav2@1x.png") no-repeat;
+      background: url("/img/nav2@1x.png") no-repeat;
+      
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/nav2@2x.png");
+        background-size: 18px auto;
+      }
     }
 
     &::after {
@@ -137,7 +157,7 @@
       right: -170px;
 			width: 292px;
       height: 769px;
-			background: url("/img/design-logo-desktop@1x.png") no-repeat;
+      background: url("/img/design-logo-desktop@1x.png") no-repeat;
     }
   }
 

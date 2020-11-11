@@ -6,6 +6,11 @@
 .page-header__description {
 	padding: 134px 11px 122px;
 	background: #4d43fc url("/img/bg-header-mobile@1x.jpg") no-repeat center top;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("/img/bg-header-mobile@2x.jpg");
+		background-size: 320px auto;
+	}
 }
 
 .page-header__title {
@@ -39,6 +44,11 @@
 		padding: 241px 15px 192px;
 		background: url("/img/bg-header-tablet@1x.jpg") no-repeat right top;
 
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+			background-image: url("/img/bg-header-tablet@2x.jpg");
+			background-size: 478px auto;
+		}
+
 		&::before {
 			position: absolute;
 			content: "";
@@ -47,6 +57,11 @@
 			width: 91px;
 			height: 143px;
 			background: url("/img/play-header-tablet@1x.png") no-repeat;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+				background-image: url("/img/play-header-tablet@2x.png");
+				background-size: 91px auto;
+			}
 		}
 	}
 
@@ -76,6 +91,11 @@
 			width: 11px;
 			height: 95px;
 			background: url("/img/arrow-header-tablet@1x.png") no-repeat;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+				background-image: url("/img/arrow-header-tablet@2x.png");
+				background-size: 11px auto;
+			}
 		}
 	}
 }
@@ -95,6 +115,11 @@
 			width: 113px;
 			height: 153px;
 			background: url("/img/play-header-desktop@1x.png") no-repeat;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+				background-image: url("/img/play-header-desktop@2x.png");
+				background-size: 113px auto;
+			}
 		}
 
 		&::after {
@@ -106,6 +131,11 @@
 			width: 1076px;
 			height: 750px;
 			background: url("/img/bg-header-desktop@1x.jpg") no-repeat;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+				background-image: url("/img/bg-header-desktop@2x.jpg");
+				background-size: 1076px auto;
+			}
 		}
 	}	
 
@@ -123,6 +153,11 @@
 			width: 511px;
 			height: 878px;
 			background: url("/img/bg-header-desktop2@1x.png") no-repeat;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+				background-image: url("/img/bg-header-desktop2@2x.png");
+				background-size: 511px auto;
+			}
 		}
 
 		&::before {
@@ -133,6 +168,11 @@
 			width: 18px;
 			height: 780px;
 			background: url("/img/nav1@1x.png") no-repeat;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+				background-image: url("/img/nav1@2x.png");
+				background-size: 18px auto;
+			}
 		}
 	}
 

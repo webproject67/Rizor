@@ -22,12 +22,17 @@
 	<header class="page-header">
 		<nav class="main-nav">
 			<picture>
-				<source media="(min-width: 768px)" srcset="img/logo-tablet@1x.png 1x">
-				<img class="main-nav__logo" src="img/logo-mobile@1x.png" alt="logo">
+				<source type="image/webp" media="(min-width: 768px)" srcset="img/webp/logo-tablet@1x.webp 1x, img/webp/logo-tablet@2x.webp 2x">
+				<source type="image/webp" srcset="img/webp/logo-mobile@1x.webp 1x, img/webp/logo-mobile@2x.webp 2x">
+
+				<source media="(min-width: 768px)" srcset="img/logo-tablet@1x.png 1x, img/logo-tablet@2x.png 2x">
+				<img class="main-nav__logo" src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" alt="logo">
 			</picture>
 			<button class="main-nav__btn" aria-label="button">
 				<picture>
-					<img class="main-nav__burger" src="img/burger-mobile@1x.png" alt="burger">
+					<source type="image/webp" srcset="img/webp/burger-mobile@1x.webp 1x, img/webp/burger-mobile@2x.webp 2x">
+
+					<img class="main-nav__burger" src="img/burger-mobile@1x.png" srcset="img/burger-mobile@2x.png 2x" alt="burger">
 				</picture>
 			</button>
 			<ul class="main-nav__list">
@@ -87,9 +92,13 @@
 				</li>
 			</ul>
 			<picture>
-				<source media="(min-width: 1200px)" srcset="img/colors-desktop@1x.png 1x"> 
-				<source media="(min-width: 768px)" srcset="img/colors-tablet@1x.png 1x">
-				<img class="colors__img" src="img/colors-mobile@1x.png" alt="hoverboard">
+				<source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/colors-desktop@1x.webp 1x, img/webp/colors-desktop@2x.webp 2x">
+				<source type="image/webp" media="(min-width: 768px)" srcset="img/webp/colors-tablet@1x.webp 1x, img/webp/colors-tablet@2x.webp 2x">
+				<source type="image/webp" srcset="img/webp/colors-mobile@1x.webp 1x, img/webp/colors-mobile@2x.webp 2x">
+
+				<source media="(min-width: 1200px)" srcset="img/colors-desktop@1x.png 1x, img/colors-desktop@2x.png 2x"> 
+				<source media="(min-width: 768px)" srcset="img/colors-tablet@1x.png 1x, img/colors-tablet@2x.png 2x">
+				<img class="colors__img" src="img/colors-mobile@1x.png" srcset="img/colors-mobile@2x.png 2x" alt="hoverboard">
 			</picture>
 		</section>
 		<section class="indicators">
@@ -139,15 +148,21 @@
 				<ul class="electronics__list">
 					<li class="electronics__item">
 						<picture>
-							<source media="(min-width: 1200px)" srcset="img/engine-desktop@1x.png 1x">
-							<img class="electronics__img" src="img/engine-mobile@1x.png" alt="engine">
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/engine-desktop@1x.webp 1x, img/webp/engine-desktop@2x.webp 2x">
+							<source type="image/webp" srcset="img/webp/engine-mobile@1x.webp 1x, img/webp/engine-mobile@2x.webp 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/engine-desktop@1x.png 1x, img/engine-desktop@2x.png 2x">
+							<img class="electronics__img" src="img/engine-mobile@1x.png" srcset="img/engine-mobile@2x.png 2x" alt="engine">
 						</picture>
 						<p class="electronics__text2">Бесшумный <br> двигатель</p>
 					</li>
 					<li class="electronics__item">
 						<picture>
-							<source media="(min-width: 1200px)" srcset="img/gyroscope-desktop@1x.png 1x">
-							<img class="electronics__img" src="img/gyroscope-mobile@1x.png" alt="gyroscope">
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/gyroscope-desktop@1x.webp 1x, img/webp/gyroscope-desktop@2x.webp 2x">
+							<source type="image/webp" srcset="img/webp/gyroscope-mobile@1x.webp 1x, img/webp/gyroscope-mobile@2x.webp 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/gyroscope-desktop@1x.png 1x, img/gyroscope-desktop@2x.png 2x">
+							<img class="electronics__img" src="img/gyroscope-mobile@1x.png" srcset="img/gyroscope-mobile@2x.png" alt="gyroscope">
 						</picture>
 						<p class="electronics__text2">Встроенный <br> гироскоп</p>
 					</li>

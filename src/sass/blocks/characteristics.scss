@@ -39,24 +39,44 @@
     width: 304px;
     padding: 52px 0 44px;
     background: url("/img/Housing-mobile@1x.png") no-repeat center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/Housing-mobile@2x.png");
+      background-size: 68px auto;
+    }
   }
 
   &--wheels {
     width: 220px;
     padding: 50px 0 38px;
     background: url("/img/Wheels-mobile@1x.png") no-repeat center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/Wheels-mobile@2x.png");
+      background-size: 53px auto;
+    }
   }
 
   &--power {
     width: 268px;
     padding: 41px 0 37px;
     background: url("/img/Power-mobile@1x.png") no-repeat center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/Power-mobile@2x.png");
+      background-size: 50px auto;
+    }
   }
 
   &--weight {
     width: 222px;
     padding: 55px 0 32px;
     background: url("/img/Weight-mobile@1x.png") no-repeat center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/Weight-mobile@2x.png");
+      background-size: 47px auto;
+    }
   }
 }
 
@@ -87,6 +107,11 @@
   .characteristics__inner {
     padding: 55px 0 55px 468px;
     background: url("/img/characteristics-tablet@1x.jpg") no-repeat left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/characteristics-tablet@2x.jpg");
+      background-size: 402px auto;
+    }
   }
 
   .characteristics__desc {
@@ -139,6 +164,11 @@
       width: 789px;
       height: 844px;
       background: url("/img/characteristics-desktop@1x.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/characteristics-desktop@2x.jpg");
+        background-size: 789px auto;
+      }
     }
 
     &::after {
@@ -149,6 +179,11 @@
       width: 18px;
       height: 780px;
       background: url("/img/nav3@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/nav3@2x.png");
+        background-size: 18px auto;
+      }
     }
   }
 
@@ -182,6 +217,11 @@
       width: 292px;
       height: 769px;
       background: url("/img/design-logo-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/design-logo-desktop@2x.png");
+        background-size: 292px auto;
+      }
     }
   }
 
@@ -189,21 +229,41 @@
     &--housing {
       padding: 12px 0 39px 59px;
       background: url("/img/housing-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/housing-desktop@2x.png");
+        background-size: 89px auto;
+      }
     }
   
     &--wheels {
       padding: 12px 0 0 48px;
       background: url("/img/wheels-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/wheels-desktop@2x.png");
+        background-size: 70px auto;
+      }
     }
   
     &--power {
       padding: 0 0 0 59px;
       background: url("/img/power-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/power-desktop@2x.png");
+        background-size: 66px auto;
+      }
     }
   
     &--weight {
       padding: 0 0 0 46px;
       background: url("/img/weight-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/weight-desktop@2x.png");
+        background-size: 62px auto;
+      }
     }
   }
 

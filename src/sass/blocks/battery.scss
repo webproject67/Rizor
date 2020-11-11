@@ -1,6 +1,11 @@
 .battery {
   padding: 51px 10px 222px;
   background: url("/img/battery-mobile@1x.jpg") no-repeat 10px bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("/img/battery-mobile@2x.jpg");
+		background-size: 285px auto;
+  }
 }
 
 .battery__title {
@@ -56,6 +61,11 @@
     margin: 99px 21px 0;
     padding: 26px 0 70px 352px;
     background: url("/img/battery-tablet@1x.jpg") no-repeat left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/battery-tablet@2x.jpg");
+      background-size: 305px auto;
+    }
   }
 
   .battery__title {
@@ -74,6 +84,11 @@
     margin: 230px 16px 0;
     padding: 346px 0 70px;
     background: url("/img/battery-desktop@1x.jpg") no-repeat left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/battery-desktop@2x.jpg");
+      background-size: 367px auto;
+    }
   }
 
   .battery__title {
